@@ -7,35 +7,34 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" type="stylesheet" href="style.css">
     <title>Frontend Mentor | Tip calculator app</title>
-    <script defer src="./build/bundle.js"></script>
+    <!--<script defer src="./build/bundle.js"></script> -->
 </head>
 
 <body>
     <my-beispiel></my-beispiel>
-    Bill
+    <h2>Bill</h2>
+    <input type="number" id="eingabeFeld" min="0,01" />
 
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
+    <h2>Select Tip %</h2>
+    <div class="buttonPercent">5%</div>
+    <div class="buttonPercent">10%</div>
+    <div class="buttonPercent">15%</div>
+    <div class="buttonPercent">25%</div>
+    <div class="buttonPercent">50%</div>
+    
+    <div class="costumButton">Custom</div>
+  
 
-    Number of People
+    <h2>Number of People</h2>
 
-    Tip Amount
-    / person
+    <div class="total">Tip Amount</div>
+    <div class="pro">/ person</div>
 
-    Total
-    / person
+    <div class="total">Total</div>
+    <div class="pro">/ person</div>
 
-    Reset
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
-    <input type="text" id="myInput" />
+    <div class="buttonReset">Reset</div>
+
 </body>
 
 </html>
