@@ -12,27 +12,32 @@
 
 <body>
     <div class="background">
-        <label>Bill <!--normalerweise label mit for und ID eingeben aber ich glaub das brauch ich nicht weil alles was ich label nenne soll später gleich aussehen-->
+        <label>Bill
+            <!--normalerweise label mit for und ID eingeben aber ich glaub das brauch ich nicht weil alles was ich label nenne soll später gleich aussehen-->
             <input type="number" id="inputBill" min="0,01" />
         </label>
 
         <label>Select Tip % <br />
-            <div class="button5Percent"><button>5%</button></div>
-            <div class="button10Percent"><button>10%</button></div>
-            <div class="button15Percent"><button>15%</button></div>
-            <div class="button25Percent"><button>25%</button></div>
-            <div class="button50Percent"><button>50%</button></div>
+            <div class="buttonPercent">
+                <!--brauch ich um buttons zu stylen-->
+                <div class="button5Percent"><button>5%</button></div>
+                <div class="button10Percent"><button>10%</button></div>
+                <div class="button15Percent"><button>15%</button></div>
+                <div class="button25Percent"><button>25%</button></div>
+                <div class="button50Percent"><button>50%</button></div>
+            </div>
 
             <div id="customButton">
                 <!--Gibt es nur einmal deswegen ID-->
                 <input type="number" id="inputCustom" min="0,01" placeholder="Custom">
             </div>
         </label>
-
-        <label>Number of People</label>
-        <label class="inputError">Can't be zero</label>
-        <!--muss ich später schauen wie ich das nur einblende wenn man verscuht 0 einzugeben, mit Klasse probieren-->
-        <input type="number" id="inputNumberPeople" min="1" placeholder="0" />
+        <div class="numberOfPeople">
+            <label>Number of People</label>
+            <label class="inputError">Can't be zero</label>
+            <!--muss ich später schauen wie ich das nur einblende wenn man verscuht 0 einzugeben, mit Klasse probieren-->
+            <input type="number" id="inputNumberPeople" min="1" placeholder="0" />
+        </div>
     </div>
 
     <div class="total">Tip Amount</div>
