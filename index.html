@@ -4,57 +4,60 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <title>Frontend Mentor | Tip calculator app</title>
+    <title>Tip calculator app</title>
     <!--<script defer src="./build/bundle.js"></script> -->
 </head>
 
 <body>
+    <h1>S&#8201;P&#8201;L&#8201;I&#8201;T&#8201;T&#8201;E&#8201;R</h1>
     <div class="background">
         <div class="whiteCard">
-            <label>Bill
-                <input type="number" id="inputBill" min="0,01" />
-            </label>
+            <div class="container1">
+                <label>Bill
+                    <input type="number" id="inputBill" min="0,01" />
+                </label>
 
-            <label>Select Tip % <br />
-                <div class="buttonPercent">
-                    <div class="button 5Percent">5%</div>
-                    <div class="button 10Percent">10%</div>
-                    <div class="button 15Percent">15%</div>
-                    <div class="button 25Percent">25%</div>
-                    <div class="button buttonActive 50Percent">50%</div>
-                </div>
+                <label>Select Tip % <br />
+                    <div class="buttonPercent">
+                        <div class="button 5Percent">5%</div>
+                        <div class="button 10Percent">10%</div>
+                        <div class="button 15Percent">15%</div>
+                        <div class="button 25Percent">25%</div>
+                        <div class="button buttonActive 50Percent">50%</div>
+                    </div>
 
-                <div id="customButton">
-                    <input type="number" id="inputCustom" min="0,01" placeholder="Custom">
+                    <div id="customButton">
+                        <input type="number" min="0,01" placeholder="Custom">
+                    </div>
+                </label>
+                <div class="numberOfPeople">
+                    <label>Number of People</label>
+                    <label class="inputError">Can't be zero</label>
+                    <input type="number" min="1" placeholder="1" />
                 </div>
-            </label>
-            <div class="numberOfPeople">
-                <label>Number of People</label>
-                <label class="inputError">Can't be zero</label>
-                <input type="number" id="inputNumberPeople" min="1" placeholder="1" />
-            </div>
-        </div>
-
-        <div class="tip">
-            <div class="tipResult">
-                <div class="tipText">
-                    <p>Tip Amount</p>
-                    <p class="proPerson">/ person</p>
-                </div>
-                <div class="amountTip" id="amountTip1">€2.33</div>
             </div>
 
-            <div class="total">
-                <div class="totalText">
-                    <p>Total</p>
-                    <p class="proPerson">/ person</p>
-                </div>
-                <div class="amountTotal" id="amountTip1">€31.00</div>
-            </div>
 
-            <div class="buttonReset"> <button type="reset">Reset</button></div>
+            <div class="greenCard">
+                <div class="tipResult">
+                    <div class="tipText">
+                        <p>Tip Amount</p>
+                        <p class="proPerson">/ person</p>
+                    </div>
+                    <div class="amountTip">€2.33</div>
+                </div>
+
+                <div class="total">
+                    <div class="totalText">
+                        <p>Total</p>
+                        <p class="proPerson">/ person</p>
+                    </div>
+                    <div class="amountTotal">€31.00</div>
+                </div>
+
+                <div class="buttonReset"> <button type="reset">Reset</button></div>
+            </div>
         </div>
     </div>
 </body>
