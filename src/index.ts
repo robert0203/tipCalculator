@@ -1,6 +1,9 @@
+import { numberBill } from "./inputNumbers"
 
-function test(numberBill:number){
-    if(numberBill > 0.00){
-        console.log(numberBill)
-    }
-}
+
+numberBill.addEventListener("change", function(){
+    console.log("test")
+})
+
+
+console.log(calculateTip(50, 0.15, 2))
