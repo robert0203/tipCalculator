@@ -1,9 +1,10 @@
-import { numberBill } from "./inputNumbers"
+import { billInput, peopleInput } from "./eventListener";
+import { numberPercent } from "./inputNumbers";
+import { percent } from "./percent";
 
+peopleInput();
+billInput();
 
-numberBill.addEventListener("change", function(){
-    console.log("test")
-})
+numberPercent.forEach(button => console.log(button.textContent));
 
-
-console.log(calculateTip(50, 0.15, 2))
+console.log(percent("5%"));
