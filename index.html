@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <title>Tip calculator app</title>
-    <!--<script defer src="./build/bundle.js"></script> -->
+    <script defer src="./build/bundle.js"></script>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <div class="numberOfPeople">
                     <label>Number of People</label>
                     <label class="inputError">Can't be zero</label>
-                    <input type="number" min="1" placeholder="1" />
+                    <input type="number" min="1" id="numberPeople" placeholder="1" />
                 </div>
             </div>
 
@@ -43,7 +43,7 @@
                         <p>Tip Amount</p>
                         <p class="proPerson">/ person</p>
                     </div>
-                    <div class="amountTip">€2.33</div>
+                    <div class="amountTip" id="amountTip">€2.33</div>
                 </div>
 
                 <div class="total">
@@ -51,7 +51,7 @@
                         <p>Total</p>
                         <p class="proPerson">/ person</p>
                     </div>
-                    <div class="amountTotal">€31.00</div>
+                    <div class="amountTotal" id="amountTotal">€31.00</div>
                 </div>
 
                 <div class="buttonReset">Reset</div>
