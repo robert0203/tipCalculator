@@ -1,5 +1,3 @@
-function calculateTip(bill:number, percent:number, people:number):number {
-    return (bill * percent / people) + (bill / people);
-}
+import { amountBill, amountPeople } from "./eventListener";
+import { numberTip, numberTotal } from "./inputNumbers";
 
-console.log(calculateTip(50, 0.15, 2));
