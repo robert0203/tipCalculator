@@ -4,6 +4,7 @@ const numberCustom: HTMLInputElement = <HTMLInputElement>document.getElementById
 const numberTotal: HTMLElement = <HTMLElement>document.getElementById("amountTotal")
 const numberTip: HTMLElement = <HTMLElement>document.getElementById("amountTip")
 const numberPercent: NodeList = <NodeList>document.querySelectorAll(".button")
+const buttonReset: HTMLElement = <HTMLElement>document.getElementById("buttonReset")
 
 
 
@@ -13,4 +14,4 @@ numberTip.innerHTML = "€ " + (0.00).toFixed(2)
 numberTotal.innerHTML = "€ " + (0.00).toFixed(2)
 
 
-export {numberBill, numberPeople, numberCustom, numberTip, numberTotal, numberPercent}
+export {numberBill, numberPeople, numberCustom, numberTip, numberTotal, numberPercent, buttonReset}

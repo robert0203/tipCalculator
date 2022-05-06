@@ -40,7 +40,7 @@ input {
 
 h1 {
     text-align: center;
-    color:hsl(183, 100%, 15%);
+    color: hsl(183, 100%, 15%);
     padding: 2rem;
 }
 
@@ -66,16 +66,12 @@ h1 {
     cursor: pointer;
 }
 
-.button:hover {
-    transition: 0.5s;
-    background-color: hsl(185, 41%, 84%);
-    color: hsl(183, 100%, 15%);
-}
 
-/*.buttonActive {
+#startTip {
     color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
-}*/
+}
+
 
 
 #customButton {
@@ -140,7 +136,7 @@ h1 {
 .buttonReset {
     text-align: center;
     font-size: 20px;
-    color:  hsl(183, 100%, 15%);
+    color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -152,63 +148,62 @@ h1 {
     background-color: hsl(185, 41%, 84%);
 }
 
-@media screen and (min-width: 1000px){
-    
+@media screen and (min-width: 1000px) {
+
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .greenCard {
         flex-direction: column;
         display: flex;
         align-content: space-between;
         width: 450px;
     }
-    
+
     .whiteCard {
         flex-direction: row;
         height: 419px;
         border-radius: 1.5rem;
         width: 900px;
     }
-    
+
     input {
         width: 400px;
         padding: 0.7rem;
     }
-    
+
     .container1 {
         margin-top: 1rem;
         margin-left: 1.2rem;
         display: flex;
         flex-direction: column;
     }
-    
+
     .button {
         height: 56px;
     }
-    
+
     .buttonPercent {
         display: grid;
         grid-template-columns: 130px 130px 130px;
         row-gap: 1rem;
         column-gap: 1.5rem;
     }
-    
+
     .buttonReset {
         margin-top: auto;
         padding: 13px 0px;
     }
-    
+
     .amountTip {
         font-size: 40px;
     }
-    
+
     .amountTotal {
         font-size: 40px;
     }
-    
-    }
-    
+
+}
