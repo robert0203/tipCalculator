@@ -1,3 +1,4 @@
+//Importieren von HTML-Elementen und Listen
 const numberBill: HTMLInputElement = <HTMLInputElement>document.getElementById("inputBill")
 const numberPeople: HTMLInputElement = <HTMLInputElement>document.getElementById("numberPeople")
 const numberCustom: HTMLInputElement = <HTMLInputElement>document.getElementById("customButton")
@@ -7,7 +8,7 @@ const numberPercent: NodeList = <NodeList>document.querySelectorAll(".button")
 const buttonReset: HTMLElement = <HTMLElement>document.getElementById("buttonReset")
 
 
-
+//Werte werden alle auf "0" gesetzt 
 numberBill.value = "0.00";
 numberPeople.value = "1";
 numberTip.innerHTML = "€ " + (0.00).toFixed(2)
