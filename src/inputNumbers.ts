@@ -15,4 +15,4 @@ numberTip.innerHTML = "€ " + (0.00).toFixed(2)
 numberTotal.innerHTML = "€ " + (0.00).toFixed(2)
 
 
-export {numberBill, numberPeople, numberCustom, numberTip, numberTotal, numberPercent, buttonReset}
+export { numberBill, numberPeople, numberCustom, numberTip, numberTotal, numberPercent, buttonReset }
