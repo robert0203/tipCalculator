@@ -10,14 +10,20 @@
 </head>
 
 <body>
+    <!--Headline-->
     <h1>S&#8201;P&#8201;L&#8201;I&#8201;T&#8201;T&#8201;E&#8201;R</h1>
+
+    <!--Verschiedene Container für Hintergründe; hauptsächlich zum stylen-->
     <div class="background">
         <div class="whiteCard">
             <div class="container1">
+
+                <!--Bill-Input-->
                 <label>Bill <br>
                     <input type="number" id="inputBill" min="0,01" />
                 </label>
 
+                <!--Buttons mit Prozentwerten-->
                 <label>Select Tip % <br />
                     <div class="buttonPercent">
                         <div class="button 5Percent">5%</div>
@@ -26,11 +32,16 @@
                         <div class="button 25Percent">25%</div>
                         <div class="button 50Percent">50%</div>
 
+                        <!--Input-Feld für Custom-Prozentwerte-->
                         <input type="number" min="0,01" id="customButton" placeholder="Custom">
                     </div>
                 </label>
+
+                <!--Inputfeld Anzahl der Personen-->
                 <div class="numberOfPeople">
                     <label>Number of People</label>
+
+                    <!--Error bei einem Input von "0"-->
                     <label class="inputError">Can't be zero</label>
                     <input type="number" min="1" id="numberPeople" placeholder="1" />
                 </div>
@@ -40,6 +51,8 @@
             <div class="greenCard">
                 <div class="tipResult">
                     <div class="tipText">
+
+                        <!--Ergenbiswerte-->
                         <p>Tip Amount</p>
                         <p class="proPerson">/ person</p>
                     </div>
@@ -54,6 +67,7 @@
                     <div class="amountTotal" id="amountTotal">€31.00</div>
                 </div>
 
+                <!--Reset-Button-->
                 <div class="buttonReset" id="buttonReset">Reset</div>
             </div>
         </div>
