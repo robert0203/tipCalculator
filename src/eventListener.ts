@@ -1,5 +1,5 @@
 import { calculateTip } from "./calculateTip";
-import { buttonReset, numberBill, numberCustom, numberPeople, numberPercent, numberTip, numberTotal } from "./inputNumbers"
+import { buttonReset, msgError, numberBill, numberCustom, numberPeople, numberPercent, numberTip, numberTotal } from "./inputNumbers"
 
 //Verschiedene Eventlistener
 numberBill.addEventListener("input", billInput);
@@ -23,6 +23,15 @@ function billInput() {
 function peopleInput() {
     amountPeople = parseFloat(numberPeople.value)
     calculateTip(amountBill, amountTip, amountPeople);
+
+    /*if(amountPeople < 1){
+        msgError.style.display = "flex";
+        numberPeople.style.border = "orangered";
+    }else{
+        msgError.style.display = "none";
+        numberPeople.style.border = "none";
+        calculateTip(amountBill, amountTip, amountPeople);
+    }*/
 }
 
 //Zuerst wird der HIntergrund/ Schriftfarbe der Buttons zurückgesetzt und dann dort gesetzt wo ich geklickt hab (target)
@@ -38,7 +47,6 @@ function handleClick(event: Event) {
 function clearBackground() {
     let colorButtons: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("button") as HTMLCollectionOf<HTMLElement>;
     for (let item of colorButtons) {
-        console.log(item.id);
         item.style.backgroundColor = "hsl(183, 100%, 15%)";
         item.style.color = "white"
     }
